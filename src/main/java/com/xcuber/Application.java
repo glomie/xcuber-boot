@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
@@ -14,15 +13,6 @@ public class Application extends WebMvcConfigurerAdapter implements EmbeddedServ
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-	}
-
-	@GetMapping("/")
-	public String home() {
-		return "hello worldgdgs";
-	}
-	@GetMapping("/test1")
-	public String hom1e() {
-		return "hello worldgdgs";
 	}
 
 	@Override
