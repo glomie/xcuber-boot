@@ -9,7 +9,7 @@ public class MyHealthIndicator extends AbstractHealthIndicator {
 
 	@Override
 	protected void doHealthCheck(Builder builder) throws Exception {
-		builder.up().withDetail("name", "junyan");
+		builder.up().withDetail("name", "junyan1");
 	}
 
 }
