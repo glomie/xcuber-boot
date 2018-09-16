@@ -1,4 +1,9 @@
+server:
+  port: 8080
+
 spring:
+  application:
+    name: xcuber
   datasource:
     name: mainDb
     url: jdbc:mysql://23.83.247.18:3306/xcuber
@@ -6,6 +11,21 @@ spring:
     password: junyan2016
     driver-class-name: com.mysql.jdbc.Driver
 
-
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
+
+endpoints:
+  sensitive: false
+  shutdown:
+    enabled: true
+  actuator:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+info:
+  app:
+    name: this is my test
+    lastdate: 2017-11-03 16:51:00
