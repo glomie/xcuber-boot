@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    name: mainDb
+    url: jdbc:mysql://23.83.247.18:3306/xcuber
+    username: root
+    password: junyan2016
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
